@@ -1,0 +1,77 @@
+<html>
+    <head><!-- este sale en el encabezado del navegador, donde estan las demas pestañas-->
+        <meta charset="utf-8"/><!-- esto es para que reconosca los caracteres especiales-->
+        <title> MOKEPON! </title> 
+
+        <script src="codigo.js"></script><!-- el codigo se carga despues de que el html este inicializado para que cargue todas las variables en el .js-->
+        <link rel="stylesheet" href="stiles.css"><!-- esto llama al css el cual edita los estilos de la pagina-->
+        
+    </head>
+    <body id="cuerpaso">
+        <h1 id="titulo"  class="titulo"><!-- titulo-->MOKEPON+ REALMON!</h1>
+        <section id="seleccionar-mascota"> 
+
+        
+            <h2> Elige a tu mascota: </h2>
+
+
+            <label  class="tarjeta_de_mokepon"   for="hipopotamo">hipopo 🦛 <input type="radio" name="mascota" id="hipopotamo" ></label>
+            
+
+            <label  class="tarjeta_de_mokepon"   for="camello">camello 🐫 <input type="radio" name="mascota" id="camello" ></label>
+            
+
+            <label  class="tarjeta_de_mokepon"   for="komodo">komodo 🦎 <input type="radio" name="mascota" id="komodo" ></label>
+            
+
+            <label  class="tarjeta_de_mokepon"   for="chiguiro">chiguiro 🐹 <input type="radio" name="mascota" id="chiguiro" ></label>
+            
+
+            <label  class="tarjeta_de_mokepon"   for="toro">toro 🐮 <input type="radio" name="mascota" id="toro" ></label>
+            
+
+            <label  class="tarjeta_de_mokepon"   for="barracuda">barracuda 🐟<input type="radio" name="mascota" id="barracuda" ></label>
+            
+
+            
+
+            <button id="boton-seleccion_mascota"> Seleccionar </button>
+
+        </section>
+        <section id="seleccionar-ataque"> 
+            <h2 class="sub-ataq"> 
+                <div>
+                    elige a tu ataque:   
+                </div>
+
+                <div class="texto_de_ref_conb">
+                    <p>tu mascota <span id="mascota_jugador"></span> tiene <span id="vida_jugador">3</span> vidas</p>
+                    <p>la mascota <span id="mascota_enemiga"></span> del enemigo tiene <span id="vida_enemigo">3</span> vidas</p>
+                </div>
+
+            </h2>
+
+            <div>
+                <button id="boton-seleccion_fuego" class="botones-ataque"> fuego 🔥🧨🌋 </button>
+                <button id="boton-seleccion_agua" class="botones-ataque"> agua 💧💦☔</button>
+                <button id="boton-seleccion_tierra" class="botones-ataque"> tierra 🌵☘🌿</button>
+            </div>
+
+            <div>
+                <section id="reiniciar">
+                    <button id="boton-seleccion_reiniciar">Reiniciar</button>
+        
+                </section>
+            </div>
+
+            <div>
+                <section id="mensajes_combate"> </section>
+                
+
+            </div>
+
+            
+            
+        </section>
+    </body>
+</html>

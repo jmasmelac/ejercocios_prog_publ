@@ -1,0 +1,14 @@
+{
+  "name": "makepon",
+  "version": "1.0.0",
+  "description": "curso rapido de programacion",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "luko",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
