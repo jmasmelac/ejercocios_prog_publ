@@ -23,6 +23,7 @@ Mostrar Pedidos Pendientes: Mostrar todos los pedidos pendientes en orden de lle
 Mostrar Pedidos Listos: Mostrar todos los pedidos listos para servir en orden de preparación.
 Mostrar Último Pedido Servido: Mostrar el último pedido que fue servido.
 */
+// #region librerías
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -31,8 +32,8 @@ Mostrar Último Pedido Servido: Mostrar el último pedido que fue servido.
 
 #define tamaño_arreglo 10
 
-typedef struct {//declaracion de pedidos donde se toma el id, la orden y el estado
-  long long int Identificador;//variable que se le asgnara la fecha exacta como id
+typedef struct {//declaración de pedidos donde se toma el id, la orden y el estado
+  long long int Identificador;//variable que se le asignara la fecha exacta como id
    char Orden_[200];//orden del cliente a cocinar
    char estado[20];//estado del pedido
 } Pedidos;
@@ -67,10 +68,10 @@ int main(){
             printf("2. Orden lista \n");
             printf("3. Servir pedido \n");
             printf("4. Pedidos pendientes \n");
-            printf("5. Pedodos listos \n");
-            printf("6. Ultimos pedidos servidos\n");
+            printf("5. Pedidos listos \n");
+            printf("6. Últimos pedidos servidos\n");
             printf("0. Salir\n");
-            printf("Seleccione una opcion: ");
+            printf("Seleccione una opción: ");
             scanf("%d", &opcion);
             switch (opcion) {
                case 1://Agregar pedido
@@ -114,15 +115,15 @@ int main(){
                      }
                }
                break;
-               case 5://Pedodos listos
+               case 5://Pedidos listos
                break;
-               case 6://Ultimos pedidos servidos
+               case 6://Últimos pedidos servidos
                break;
                case 0://Salir
                printf("Saliendo del programa...\n");
                break;
                default:
-               printf("Opcion no valida. Por favor, seleccione una opcion valida.\n");
+               printf("Opción no valida. Por favor, seleccione una opción valida.\n");
                break;
             }
     }while (opcion != 0);
