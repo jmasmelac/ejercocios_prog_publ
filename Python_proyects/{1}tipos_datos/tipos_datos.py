@@ -33,6 +33,19 @@ print("para la variable soltero ",type(soltero)," su valor es ",not soltero)
 
 #listas
 mi_lista = [1, 2, 3, 4, 5]
+mi_lista.append(6)                      #inserta al final
+mi_lista.insert(0,'hola')               #inserta donde quieras y corre el resto un espacio
+mi_lista2=['a','b','c','d','e']
+new_list=mi_lista+mi_lista2
+info_list = new_list.index('c')         #muestra la posición de un elemento
+new_list[info_list]='h'                 #remplazo de dato
+new_list.remove('a')                    #elimina un elemento de la lista
+new_list.pop()                          #elimina el ultimo elemento de la lista, si le ingresas una posición la elimina
+new_list.reverse()                      #le da la vuelta a la lista
+mi_lista3=[1,5,2,8,6,8,0,9,7,3,4]
+mi_lista3.sort()                        #ordena de menor a mayor,igual con letras, pero solo si hay un solo tipo de datos
+
+
 
 #tupla  elementos inmutables
 mi_tupla = (1, 2, 3)
@@ -41,7 +54,19 @@ mi_tupla = (1, 2, 3)
 mi_conjunto = {1, 2, 3}
 
 #diccionario
-mi_diccionario = {"nombre": "Juan", "edad": 30}
+mi_diccionario = {"nombre": "Juan", 
+                  "edad": 30,
+                  "lastname": "dar",
+                  "localidad":"new york",
+                  "lenguajes":['python','javascript','c']}
+mi_diccionario["nombre"]="José"                                 #cambia el valor
+mi_diccionario["edad"]-=3                                       #modifica valor
+mi_diccionario["lenguajes"].append('c++')                       #añade mas valores
+del mi_diccionario["lastname"]                                  #elimina 
+mi_diccionario.pop('localidad')                                 #elimina
+mi_diccionario.keys()                                           #las llaves
+mi_diccionario.values()                                         #los valores de las llaves
+
 
 #transformar tipos
 print(type(valor1)," ",type(Pablo), " ","pero yo quiero ver ",Pablo+" "+str(valor1))#le puse un espacio para leer mejor

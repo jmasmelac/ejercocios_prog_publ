@@ -9,6 +9,6 @@ print("cada palabra empieza en mayúscula", frase.title())                      
 print("cuenta cuantas vees aparece la a",frase.count("a"))                               #cuenta cuantas veces aparece un carácter
 print("presto cambio",frase.swapcase())                                                  #cambia mayúscula a minúscula y minúscula a mayúscula
 print("empieza por 'el' ? ",frase.startswith("el"))                                      #verifica si una cadena de caracteres empieza por algo en especifico
-print("termina por 'el' ? ",frase.endswith("el"))                                        #verifica si una cadena de caracteres empieza por algo en especifico
+print("termina por 'el' ? ",frase.endswith("el"))                                        #verifica si una cadena de caracteres termina por algo en especifico
 print("la cosa mas asquerosa que vas a leer ",frase.replace('o','e'))                    #remplaza por lo que desees
 print("el texto son dígitos? ",frase.isdigit())                                          #son dígitos?
