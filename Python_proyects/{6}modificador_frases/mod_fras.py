@@ -12,3 +12,5 @@ print("empieza por 'el' ? ",frase.startswith("el"))                             
 print("termina por 'el' ? ",frase.endswith("el"))                                        #verifica si una cadena de caracteres termina por algo en especifico
 print("la cosa mas asquerosa que vas a leer ",frase.replace('o','e'))                    #remplaza por lo que desees
 print("el texto son dígitos? ",frase.isdigit())                                          #son dígitos?
+splash=frase.split()
+print("almacena las palabras en una lista ",splash)                                      #el split almacena una cadena de palabras por palabra
