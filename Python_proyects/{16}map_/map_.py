@@ -32,9 +32,9 @@ print(precios)
 #añadir impuestos 
 
 def add_impuestos(item):#función que calcula los impuestos
-    #new_item=item.copy()  #esto arregla la modificación del original, creando otra variable
-    item['taxes']=item['price']*0.19
-    return item
+    new_item=item.copy()  #esto arregla la modificación del original, creando otra variable para que la original no cambie
+    new_item['taxes']=new_item['price']*0.19
+    return new_item
 
 new_tabla=list(map(add_impuestos,items))
 print(new_tabla)

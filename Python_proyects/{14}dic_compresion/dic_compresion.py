@@ -1,6 +1,6 @@
 #compresión de diccionarios
 
-#forma clasica
+#forma clásica
 
 dict={}
 for i in range(1,10):
