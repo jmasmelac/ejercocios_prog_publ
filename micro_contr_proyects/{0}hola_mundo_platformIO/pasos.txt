@@ -1,0 +1,46 @@
+tutorial en https://electronoobs.com/eng_arduino_tut195.php
+1. abrir el archivo .ini del proyecto y agregar:
+    herramienta de depuración
+    el puerto com del Arduino
+    y una librería
+    le pase a gpt y me dijo lo siguiente
+    ; [env:nanoatmega328]
+    ; platform = atmelavr
+    ; board = nanoatmega328
+    ; framework = arduino
+
+    ; ; nuevas lineas
+    ; debug_tool = avr-stub
+    ; debug_port = \\.\COM7           ; puerto com, aca se cambia a dispocicion del equipo 
+
+    ; ; GDB stub implementation
+    ; lib_deps =
+    ;     jdolinay/avr-debugger @ ~1.4
+
+    [env:nanoatmega328]
+    platform = atmelavr
+    board = nanoatmega328
+    framework = arduino
+    build_type = debug
+    monitor_speed = 115200
+    lib_deps =
+        jdolinay/avr-debugger
+    debug_tool = avr-stub
+    debug_port = \\.\COM7 
+
+2. agregas las librerías de depuración
+
+    #include "avr8-stub.h" // esta librería es por el micro
+    #include "app_api.h" //Only needed for flash breakpoints
+
+
+3. ojo, con el código ya hecho se ponen los break points donde se desea y se hace lo siguiente:
+
+    ctrl+shift+p  
+
+    y en el menu de vscode se pone "platformio: star debug" para el caso de querer depurar con los breakpoints en cuenta, 
+    funciona análogo a otros entornos de depuración
+
+    para el caso de querer ver una variable en donde dice watch se escribe el nombre de la misma que este en código y se ve como varia entre cada break point
+
+    ojo esto solo funciona con el código principal , no con las librerías 
