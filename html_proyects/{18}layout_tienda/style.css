@@ -1,0 +1,255 @@
+/* Valores predeterminados */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(to bottom, #a4abff, #007bff);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to bottom right, #007bff, #a4abff);
+    border-top: 0.2rem solid #fff700;
+    border-bottom: 0.2rem solid #25282c;
+    padding: 1rem;
+}
+
+.header-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 2rem;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-left: 1rem;
+}
+
+.nav a {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav a:hover {
+    background-color: #a4abff;
+    transform: translateY(0.2rem);
+}
+
+/* Main */
+main {
+    flex-grow: 1;
+    display: flex;
+    max-width: 120rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.lateral {
+    width: 20%;
+    min-width: 15rem;
+    background-color: rgba(209, 52, 8, 0.8);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
+
+.img-lateral img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.main-content {
+    flex-grow: 1;
+    width: 100%;
+}
+
+/* Info productos */
+.info-productos {
+    margin-bottom: 2rem;
+}
+
+.titulo-info-producto {
+    font-size: 3rem;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.titulo-info-producto:hover {
+    transform: scale(1.05);
+    color: #e6b800;
+}
+
+.parrafo-acerca-de {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Productos */
+.productos h2 {
+    font-size: 2.4rem;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+.producto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+}
+
+.producto {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.producto h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.producto p {
+    font-size: 1.4rem;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(37, 40, 44, 0.8);
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-media a {
+    color: orange;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    html {
+        font-size: 56.25%; /* 9px base para pantallas más pequeñas */
+    }
+
+    body {
+        font-size: 1.4rem; /* Reducir ligeramente el tamaño de fuente base */
+    }
+
+    main {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .lateral {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+        order: -1; /* Mueve la sección lateral al principio en móviles */
+    }
+
+    .img-lateral {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .img-lateral img {
+        width: 12rem; /* Reducir el tamaño de las imágenes en móvil */
+        flex-shrink: 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 1rem;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav li {
+        margin: 0.5rem;
+    }
+
+    .producto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-info-producto {
+        font-size: 2.4rem; /* Reducir el tamaño del título en móvil */
+    }
+
+    .productos h2 {
+        font-size: 2rem; /* Reducir el tamaño del subtítulo en móvil */
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 50%; /* 8px base para pantallas muy pequeñas */
+    }
+
+    main {
+        padding: 0.5rem;
+    }
+
+    .lateral {
+        margin-bottom: 1rem;
+    }
+
+    .img-lateral img {
+        width: 10rem; /* Reducir aún más el tamaño de las imágenes en pantallas muy pequeñas */
+    }
+
+    .producto {
+        padding: 0.5rem;
+    }
+}

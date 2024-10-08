@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(to right, grey, white); /* Gradiente suave de fondo */
+    text-align: center; /* Centra todo el texto en el body */
+    font-family: 'Arial', sans-serif; /* Tipo de letra general */
+    font-size: 16px; /* Tamaño de texto base */
+    line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+    color: #333; /* Color de texto general */
+    margin: 0; /* Eliminar márgenes por defecto */
+    padding: 20px; /* Espaciado interno */
+}
+
+h2 {
+    color: green; /* Color verde para h2 */
+    font-family: 'Arial', sans-serif; /* Tipo de letra para h2 */
+    font-size: 1.8em; /* Tamaño de fuente más grande para h2 */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+h3 {
+    color: rgb(0, 100, 0); /* Color verde oscuro para h3 */
+    font-size: 1.5em; /* Tamaño de fuente para h3 */
+    margin-top: 15px; /* Espaciado superior */
+    margin-bottom: 8px; /* Espaciado inferior */
+}
+
+p {
+    color: black; /* Color negro para párrafos */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif; /* Tipo de letra para párrafos */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+ul {
+    list-style-type: none; /* Quita las viñetas */
+    padding: 0; /* Elimina el espaciado interno */
+    margin: 0; /* Elimina el margen externo */
+}
+
+li {
+    color: black; /* Color negro para listas */
+    margin-bottom: 5px; /* Espaciado inferior entre elementos de lista */
+}
+
+img{
+    width: 300px; /* Establece el ancho de la imagen a 300 píxeles */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 40px;/*radio del los bordes en pixeles*/
+}

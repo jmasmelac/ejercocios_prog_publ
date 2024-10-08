@@ -1,0 +1,34 @@
+/*este css es por clases*/
+.main-nav{
+    margin-top: 10px;
+    list-style: none;/*quita los puntos de la lista desordenada*/
+    padding-left: 0px;/*espacio entre la pantalla y el texto*/
+    background-color: aquamarine;
+}
+.main-nav__item{
+    display: inline-block;/*pasa los elementos a horizontal*/
+}
+
+/*a todas las etiquetas de elemento "a" dentro de esa clase se van a modificar*/
+.main-nav__item a{
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: blue;
+}
+
+/*la pseudo clase es eventos que ocurren en la pagina*/
+/*para este caso es que el mouse este encima de lo que se le da clic*/
+.main-nav__item a:hover{
+    color: pink;
+}
+/*cambio cuando se le da clic*/
+.main-nav__item a:active{
+    color: red;
+}
+/*los pseudo elementos agregan contenido después de el elemento en cuestión*/
+/*para este caso se agrega un | después de cada palabra de la clase */
+.main-nav__item a::after{
+    content: " | ";
+}

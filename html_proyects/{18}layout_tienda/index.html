@@ -1,0 +1,100 @@
+<!--
+Este proyecto está licenciado bajo una Licencia Creative Commons Atribución-NoComercial 4.0 Internacional.
+ Puedes:
+ - Compartir: copiar y redistribuir el material en cualquier medio o formato.
+ - Adaptar: remezclar, transformar y construir sobre el material.
+ Bajo las siguientes condiciones:
+ - Atribución: debes dar crédito adecuado, proporcionar un enlace a la licencia e indicar si se realizaron cambios.
+    No puedes sugerir que el licenciante te respalda a ti o al uso que hagas del material.
+ - NoComercial: no puedes utilizar el material con fines comerciales.
+ Puedes encontrar una copia completa de la licencia en el siguiente enlace: http://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+ © Author: jmasmelac (Dev)
+index.html (c) 2024  October 07 10:35
+Version:2024-10-07T15:35:51.915Z
+Para ver el diagrama de flujo (si hay) mira el archivo .drawio en el proyecto
+Desc: maqueta de pagina web de una tienda, botones al costado izquierdo , presentación y logo en la esquina superior izquierda, botones (home, cursos , instructor y blog) en la esquina superior derecha
+en la parte principal se ven los productos, acomodarlos a gusto
+ -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>El Mundo Animal</title>
+     <link rel="stylesheet" href="./style.css">
+ </head>
+ <body>
+     <header class="header">
+         <div class="header-content">
+             <figure class="logo">
+                 <img src="https://www.elespectador.com/resizer/v2/IWAGH4BFVVEWDEC22MN3PC6ARM.jpg?auth=0d409827b78a9cdfe4d4d76c06f3480b033cab24477816365545b377200f3794&width=910&height=606&smart=true&quality=70" alt="logo pagina" class="logo-img">
+             </figure>
+             <nav class="nav">
+                 <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Maps</a></li>
+                     <li><a href="#">Locations</a></li>
+                     <li><a href="#">About</a></li>
+                 </ul>
+             </nav>
+         </div>
+     </header>
+     <main>
+         <aside class="lateral">
+             <figure class="img-lateral">
+                 <img src="https://img.freepik.com/psd-gratis/linda-escena-perro-marron-blanco_23-2150179279.jpg" alt="Perro 1">
+                 <img src="https://img.freepik.com/foto-gratis/lindo-gato-relajante-estudio_23-2150692717.jpg" alt="Perro 2">
+                 <img src="https://media.istockphoto.com/id/675804830/es/foto/h%C3%A1mster-beige.jpg?s=612x612&w=0&k=20&c=RG2fLgdnX9D6P4n-7SzshM2PHF8B05vTHKoO4WlB28g=" alt="Perro 3">
+                 <img src="https://img.freepik.com/fotos-premium/reptil-fondo-blanco-alta-calidad-ultra-hd_889056-8596.jpg" alt="Perro 4">
+             </figure>
+         </aside>
+         <div class="main-content">
+             <section class="info-productos">
+                 <h1 class="titulo-info-producto">El Mundo Animal</h1>
+                 <p class="parrafo-acerca-de">El Mundo Animal es una tienda de mascotas que ha sido un pilar en la comunidad durante más de diez años. Fundada por una pareja apasionada por los animales, comenzó como un pequeño local y ha crecido hasta convertirse en un refugio para amantes de las mascotas. A lo largo de su trayectoria, se ha destacado por ofrecer una amplia variedad de animales, desde cachorros y gatitos hasta reptiles y peces exóticos.</p>
+             </section>
+             <section class="productos">
+                 <h2>Nuestros Productos</h2>
+                 <div class="producto-grid">
+                     <div class="producto">
+                         <img src="https://img.freepik.com/fotos-premium/reptil-fondo-blanco-alta-calidad-ultra-hd_889056-8596.jpg" alt="Producto 1">
+                         <h3>Iguana</h3>
+                         <p>Traída de las islas de Sumatra, la iguana es una excelente mascota</p>
+                     </div>
+                     <div class="producto">
+                         <img src="https://media.istockphoto.com/id/1417273996/es/foto/pez-luchador-azul-aislado-sobre-fondo-blanco-esto-tiene-un-trazado-de-recorte.jpg?s=612x612&w=0&k=20&c=W-99M0ALWoZX9XOCfWhs3JkWqbtIdtno_460unwrtSw=" alt="Producto 2">
+                         <h3>Pez Beta</h3>
+                         <p>El pez beta es una variante de republica dominicana, excelente para tener en lugares donde llama la atención, de colores vistosos y carácter hostil</p>
+                     </div>
+                     <div class="producto">
+                         <img src="https://img.freepik.com/psd-gratis/hermoso-gato-retrato-aislado_23-2150186055.jpg" alt="Producto 3">
+                         <h3>Gato domestico</h3>
+                         <p>El gato es la mascota por predilección, excelente para hogares acogedores y familias amorosas</p>
+                     </div>
+                     <div class="producto">
+                        <img src="https://media.istockphoto.com/id/513133900/es/foto/oro-retriever-sentado-en-frente-de-un-fondo-blanco.jpg?s=612x612&w=0&k=20&c=0lRWImB8Y4p6X6YGt06c6q8I3AqBgKD-OGQxjLCI5EY=" alt="Producto 4">
+                        <h3>Perro domestico</h3>
+                        <p>El Perro es el mejor amigo del hombre, excelente para hogares acogedores y familias amorosas</p>
+                    </div>
+                    <div class="producto">
+                        <img src="https://media.istockphoto.com/id/500404999/es/foto/lora-nuca-amarilla-aislado-en-blanco.jpg?s=612x612&w=0&k=20&c=17wlPJp0sPQgidQOvGImPRMlPSiuDmdYBajBkRt6Zdo=" alt="Producto 5">
+                        <h3>Loro del amazonas</h3>
+                        <p>El loro del amazonas es una mascota algo parlanchina, te hablara y te hará reír</p>
+                    </div>
+                    <div class="producto">
+                        <img src="https://media.istockphoto.com/id/1498095388/es/foto/singlke-lindo-conejillo-de-indias-aislado-sobre-fondo-blanco-de-cerca.jpg?s=612x612&w=0&k=20&c=516BcpeBZG1u_Ro19CHUjnIV7Kznu9mcxpUVnHZrLrk=" alt="Producto 6">
+                        <h3>Conejillo de indias</h3>
+                        <p>El conejillo de indias o cui es un roedor del continente americano, es lindo pero territorial con sus crías</p>
+                    </div>
+                 </div>
+             </section>
+         </div>
+     </main>
+     <footer class="footer">
+         <div class="social-media">
+             <a href="#">Hecho por jmasmelac</a>
+         </div>
+     </footer>
+ </body>
+ </html>

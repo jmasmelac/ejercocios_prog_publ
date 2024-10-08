@@ -1,0 +1,43 @@
+/* Valores predeterminados */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+.container_{
+    border: 0.3rem solid black;
+    display: flex;/*este es el que cambia el comportamiento de las siguientes cajas*/
+    /*flex-direction: column-reverse;*/
+    flex-direction: row-reverse;
+    flex-wrap: wrap;/*este es para que los elementos se replieguen en función al area de la pantalla*/
+    justify-content: center;/*centra el contenido, flex-end flex-star space-arround*/
+}
+.box{
+    width: 10rem;
+    height: 10rem;
+}
+.box001{
+    background-color: yellow;
+}
+.box002{
+    background-color: blue;
+}
+.box003{
+    background-color: red;
+}
+.box004{
+    background-color: purple;
+}
+.box005{
+    background-color: peru;
+}
+.box006{
+    background-color: greenyellow;
+}

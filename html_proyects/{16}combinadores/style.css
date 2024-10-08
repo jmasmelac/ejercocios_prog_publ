@@ -1,0 +1,23 @@
+/*esto aplica todo el comando a una etiqueta que tenga al lado la especificada*/
+/*se expresa con el "+"*/
+/*la regla se aplica al ultimo elemento*/
+h2 + p {
+    color: red;
+}
+
+/*este añade la regla a posteriori de que se cumpla la condición y se siga cumpliendo*/
+h3~p{
+    color: blue;
+}
+
+/*todas las etiquetas o clases que estén dentro de */
+/*este solo aplica a los hijos directos*/
+.mayor_que>p{
+    color: orange;
+}
+
+/*descendiente, toda etiqueta adentro de una principal se le aplica la regla*/
+
+.hereda_siempre p{
+    color: green;
+}

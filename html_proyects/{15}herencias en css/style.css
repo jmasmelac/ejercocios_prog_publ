@@ -1,0 +1,8 @@
+html{
+    font-size: 75%;/*toma el tamaño base que da el navegador y hace la proporción*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: inherit;
+}
