@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+/*cuando se crea un proyecto se tiende a repetir colores, tipos de letra y sus tamaños, y otros detalles característicos de crear un proyecto*/
+/*para ello se almacenan en un lugar esas características*/
+:root{
+    --primary-color:aquamarine;
+    --secondary-color:blue;
+    --header-size:4rem;
+    --fount:1.8rem;
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--primary-color);
+}
+main{
+    width: 100vw;
+    height: 70vh;
+    font-size: var(--fount);
+}
+h1{
+    font-size: var(--header-size);
+}
+footer{
+    width: 100vw;
+    height: 15vh;
+    background-color: var(--secondary-color);
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="picture_">
+            <img src="https://i.imgur.com/RV3g4NK.jpeg" alt="imagen 4k">
+            <p>ojo con esto, esto, esta es una imagen 4k que pongo y ajusto, pero no deja de ser 4k y su peso</p>
+        </div>
+        <div>
+            <picture>
+                <source media="(min-width:3000px)" srcset="https://i.imgur.com/RV3g4NK.jpeg"><!--imagen de 6000x4000-->
+                <source media="(min-width:800px)" srcset="https://i.imgur.com/FgY1m32.jpeg"><!--imagen de 1000x666-->
+                <source media="(min-width:600px)" srcset="https://i.imgur.com/2pG8zvb.jpeg"><!--imagen de 750x500-->
+                <source media="(min-width:320px)" srcset="https://i.imgur.com/efupEEp.jpeg"><!--imagen de 500x333-->
+                <img src="https://i.imgur.com/RcdODUU.jpeg" alt="imágenes responsive"><!--imagen por defecto de 200x133-->
+            </picture>
+            <p>primero se carga la imagen mas pequeña en pixeles, es la imagen de base</p>
+            <p>con la etiqueta source dentro de picture se ponen las otras imágenes</p>
+            <p>dentro de la etiqueta source el atributo media permite ajustar los rangos como en el css, para este caso los min-width se distribuyen en función de los rangos</p>
+            <p>para identificar las transiciones se va a inspeccionar , se pasa al menor de los aspectos (resolución) y donde dice elements se selecciona network y sale una lista de los elementos cargados</p>
+            <p>si llega a haver una transición en la pantalla ni se nota a experiencia de usuario</p>
+            <p>normalmente para imágenes responsivas el width de 100% es lo mas usado</p>
+        </div>
+    </main>
+</body>
+
+</html>
