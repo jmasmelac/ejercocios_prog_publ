@@ -36,7 +36,7 @@ int main() {
     std::cout << "para estos casos hay otros tipos de variables" << std::endl;
     std::cout << "tampoco imprime caracteres especiales por defecto" << std::endl;
     std::cout << "valor de decimal_a con formato de punto flotante extendido: " << std::fixed << decimal_a << std::endl;
-    std::cout << std::fixed << std::setprecision(2)<< "una cadena concatenada con los valores de a y b: "<< "El valor de a es " << a << " y el valor de b es " << b << " pero también esta " << d << std::endl;
+    std::cout << std::fixed << std::setprecision(2)<< "una cadena concatenada con los valores de a y b: "<< "El valor de a es " << a << " y el valor de b es " << b << " pero también esta d que es " << d << std::endl;
     printf("otra forma de imprimir con formato es usando printf: El valor de a es %d y el valor de b es %.2f\n", a, b);
 
     return 0;
